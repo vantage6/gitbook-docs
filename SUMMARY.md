@@ -18,6 +18,7 @@
 * [Node](installation/node.md)
 * [Server](installation/server/README.md)
   * [EduVPN](installation/server/eduvpn.md)
+  * [RabbitMQ](installation/server/rabbitmq.md)
   * [Docker registry](installation/server/docker-registry.md)
 
 ## Use <a href="#usage" id="usage"></a>
