@@ -1,16 +1,18 @@
 ---
 description: In this section, you will learn how to create a task from a client.
 ---
+
 # Creating a task
 
 ## Preliminaries
 
 Here we assume that
-- you have a Python session with an authenticated Client object, as created in [authentication](authentication.md)
-- you already have the algorithm you want to run available as a container in a docker registry (see [here](https://vantage6.discourse.group/t/developing-a-new-algorithm/31) for more details on developing your own algorithm)
-- the nodes are configured to look at the right database
 
-In this manual, we'll use the averaging algorithm from `harbor2.vantage6.ai/demo/average`, so the second requirement is met. This container assumes a comma-seperated (*.csv) file as input, and will compute the average over one of the named columns. We'll assume the nodes in your collaboration have been configured to look at a comma-seperated database, i.e. their config contains something like
+* you have a Python session with an authenticated Client object, as created in [Authentication](authentication.md)
+* you already have the algorithm you want to run available as a container in a docker registry (see [here](https://vantage6.discourse.group/t/developing-a-new-algorithm/31) for more details on developing your own algorithm)
+* the nodes are configured to look at the right database
+
+In this manual, we'll use the averaging algorithm from `harbor2.vantage6.ai/demo/average`, so the second requirement is met. This container assumes a comma-separated (\*.csv) file as input, and will compute the average over one of the named columns. We'll assume the nodes in your collaboration have been configured to look at a comma-separated database, i.e. their config contains something like
 
 ```
   databases:
@@ -18,21 +20,20 @@ In this manual, we'll use the averaging algorithm from `harbor2.vantage6.ai/demo
       my_other_database: /path/to/my/example2.csv
 ```
 
-so that the third requirement is also met. As an end-user running the algorithm, you'll need to allign with the node owner about which database name is used for the database you are interested in. For more info on configuring the nodes, see [configuring the node](../running-the-node/configuration.md).
+so that the third requirement is also met. As an end-user running the algorithm, you'll need to align with the node owner about which database name is used for the database you are interested in. For more info on configuring the nodes, see [configuring the node](../running-the-node/configuration.md).
 
 ## Determining which collaboration / organizations to create a task for
 
 First, you'll want to determine which collaboration to submit this task to, and which organizations from this collaboration you want to be involved in the analysis
 
 ```python
->>> client.collaboration.list(fields=['id', 'name', 'organizations])
+>>> client.collaboration.list(fields=['id', 'name', 'organizations'])
 [{'id': 1, 'name': 'example_collab1', 'organizations': [{'id': 2, 'link': '/api/organization/2', 'methods': ['GET', 'PATCH']}, {'id': 3, 'link': '/api/organization/3', 'methods': ['GET', 'PATCH']}, {'id': 4, 'link': '/api/organization/4', 'methods': ['GET', 'PATCH']}]}]
 ```
 
-In this example, we see that the collaboration called 'example_collab1' has three organizations associated with it, of which the organization id's are `2`, `3` and `4`. To figure out the names of these organizations, we run:
+In this example, we see that the collaboration called 'example\_collab1' has three organizations associated with it, of which the organization id's are `2`, `3` and `4`. To figure out the names of these organizations, we run:
 
 ```python
->>> client.organization.list(fields=['id', 'name'])
 >>> client.organization.list(fields=['id', 'name'])
 [{'id': 1, 'name': 'root'}, {'id': 2, 'name': 'example_org1'}, {'id': 3, 'name': 'example_org2'}, {'id': 4, 'name': 'example_org3'}]
 ```
@@ -57,11 +58,11 @@ average_task = client.task.create(collaboration=1,
                                   data_format='json')
 ```
 
-Note that the 'kwargs' we specified in the `input_` are specific to this algorithm: this algorithm expects an argument `column_name` to be defined, and will compute the average over the column with that name. Furthermore, note that here we created a task for collaboration with id `1` (i.e. our `example_collab1`) and the organizations with id `2` and `3` (i.e. `example_org1` and `example_org2`). I.e. the algorithm need not necessarily be run on _all_ the organizations involved in the collaboration. Finally, note that `client.task.create()` has an optional argument called `database`. Suppose that we would have wanted to run this analysis on the database called `my_other_database` instead of the `default` database, we could have specified an additional `database = 'my_other_database'` argument. Check `help(client.task.create)` for more information.
+Note that the `kwargs` we specified in the `input_` are specific to this algorithm: this algorithm expects an argument `column_name` to be defined, and will compute the average over the column with that name. Furthermore, note that here we created a task for collaboration with id `1` (i.e. our `example_collab1`) and the organizations with id `2` and `3` (i.e. `example_org1` and `example_org2`). I.e. the algorithm need not necessarily be run on _all_ the organizations involved in the collaboration. Finally, note that `client.task.create()` has an optional argument called `database`. Suppose that we would have wanted to run this analysis on the database called `my_other_database` instead of the `default` database, we could have specified an additional `database = 'my_other_database'` argument. Check `help(client.task.create)` for more information.
 
 ## Creating a task using a client that runs the RPC algorithm
 
-You might be interested to know output of the RPC algorithm (in this example: the averages for the 'age' column for each node). In that case, you can run only the RPC algorithm, ommitting the aggregation that the master algorithm will normally do:
+You might be interested to know output of the RPC algorithm (in this example: the averages for the 'age' column for each node). In that case, you can run only the RPC algorithm, omitting the aggregation that the master algorithm will normally do:
 
 ```python
 input_ = {'method': 'average_partial',
@@ -93,24 +94,27 @@ while not task_info.get("complete"):
 print("Results are ready!")
 ```
 
-When the results are in, you can get the result_id from the task object:
+When the results are in, you can get the result\_id from the task object:
 
 ```python
 result_id = task_info['id']
 ```
 
 and then retrieve the results
+
 ```python
 result_info = client.result.list(task=result_id)
 ```
 
 The number of results may be different depending on what you run, but for the master algorithm in this example, we can retrieve it using:
+
 ```python
 >>> result_info['data'][0]['result']
 {'average': 53.25}
 ```
 
 while for the RPC algorithm, dispatched to two nodes, we can retreive it using
+
 ```python
 >>> result_info['data'][0]['result']
 {'sum': 253, 'count': 4}

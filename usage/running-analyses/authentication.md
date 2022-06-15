@@ -2,10 +2,11 @@
 description: How to authenticate a client with the vantage6 server
 ---
 
-# Client authentication
+# Authentication
 
-First, we create a config file to store our login information. We do this so we do not have to define the `server_url`, `server_port` and so on every time we want to use the client. Moreover, it enables us to seperate the sensitive information (login details, organization key) that you do not want to make publicly available, from other parts of the code you might write later (e.g. on submitting particular tasks) that you might want to share publicly.
+This page and the following pages introduce some minimal examples for administrative tasks that you can perform with our [Python client](python-client.md). We start by authenticating.
 
+To authenticate, we create a config file to store our login information. We do this so we do not have to define the `server_url`, `server_port` and so on every time we want to use the client. Moreover, it enables us to separate the sensitive information (login details, organization key) that you do not want to make publicly available, from other parts of the code you might write later (e.g. on submitting particular tasks) that you might want to share publicly.
 
 ```python
 # config.py
@@ -23,6 +24,7 @@ organization_key = "FILEPATH TO MY PRIVATE KEY" # This can be empty if you do no
 Note that the `organization_key` should be a filepath that points to the private key that was generated when the organization to which your login belongs was first created (see [Creating an organization](organization.md)).
 
 Then, we connect to the vantage 6 server by initializing a Client object, and authenticating
+
 ```python
 from vantage6.client import Client
 # Note: we assume here the config.py you just created is in the current directory.
@@ -38,5 +40,5 @@ client.setup_encryption(config.organization_key)
 ```
 
 {% hint style="success" %}
-If you are having trouble authenticating, we recommend adding `verbose=True` as additional argument when creating the Client(...) object. This will print much more information that can be used to debug the issue.&#x20;
+If you are having trouble authenticating, we recommend adding `verbose=True` as additional argument when creating the Client(...) object. This will print much more information that can be used to debug the issue.
 {% endhint %}

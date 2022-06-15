@@ -6,7 +6,7 @@ description: A Python client to interact with the vantage6 server
 
 It is assumed you installed the [vantage6-client](../../installation/client.md). The Python client aims to completely cover the vantage6-server API functionality.
 
-We only show a few examples here. The methods in the library are all documented in their docstring, you can view them using `help(...)` , e.g. `help(client.user.create)` will show you the parameters needed to create a new user. We also have more extensive tutorials on how to use the clients available on our discourse pages: [https://vantage6.discourse.group/c/tutorials/](https://vantage6.discourse.group/c/tutorials/).
+We only show a few examples here. The methods in the library are all documented in their docstring, you can view them using `help(...)` , e.g. `help(client.user.create)` will show you the parameters needed to create a new user. We also have more extensive tutorials on how to use the clients available on our discourse pages: [https://vantage6.discourse.group/c/tutorials/](https://vantage6.discourse.group/c/tutorials/) and in the [Authentication page](authentication.md) and subsequent pages, which follow after introducing our R client.
 
 The following groups (related to the [concepts](../preliminaries.md#concepts)) of methods are available, most of them have a `list()`, `create()`, `delete()` and `get()` method attached.
 
