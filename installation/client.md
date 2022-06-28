@@ -1,6 +1,6 @@
 # Client
 
-The client communicates with the central server. The server hosts an API which can be used for this purpose. To see the API documentation you can use the `/apidocs` page (e.g. [https://petronas.vatage6.ai/apidocs](https://petronas.vatage6.ai/apidocs)).&#x20;
+The client communicates with the central server. The server hosts an API which can be used for this purpose. To see the API documentation you can use the `/apidocs` page (e.g. [https://petronas.vantage6.ai/apidocs](https://petronas.vantage6.ai/apidocs)).&#x20;
 
 We have written two client libraries: one for R and one for Python. The R client currently only supports creating tasks and retrieving their results.&#x20;
 
