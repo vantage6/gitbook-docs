@@ -155,7 +155,7 @@ db.User.get()
 db.User.get(1)
 
 # get user by username
-db.User.getByUsername("root")
+db.User.get_by_username("root")
 
 # get all users from the organization IKNL
 db.Organization.get_by_name("IKNL").users
@@ -164,7 +164,7 @@ db.Organization.get_by_name("IKNL").users
 To modify a user, simply adjust the properties and save the object.
 
 ```python
-user = db.User.getByUsername("some-existing-username")
+user = db.User.get_by_username("some-existing-username")
 
 # update the firstname
 user.firstname = "Brandnew"
