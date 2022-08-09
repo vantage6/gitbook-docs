@@ -44,7 +44,8 @@ vantage6 is designed with three fundamental functional aspects of Federated lear
 
 **Source code**
 
-* [vantage6 ](https://github.com/vantage6/vantage6)-> contains all components (and the python-client).&#x20;
+* [vantage6 ](https://github.com/vantage6/vantage6)-> _contains all components (and the python-client)._
+* [Planning](https://github.com/orgs/vantage6/projects?type=new) -> contains all features, bugfixes and feature request we are working on. To submit one yourself, you can create a [new issue](https://github.com/vantage6/vantage6/issues).
 
 {% hint style="warning" %}
 The old/previous (seperated) repositories can still be found at the IKNL Github in archived form:&#x20;

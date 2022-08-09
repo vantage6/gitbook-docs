@@ -8,7 +8,7 @@ description: An overview of the vantage6 infrastructure and its components
 
 Vantage6 uses both a client-server and peer-to-peer model. In the figure below the **client** can pose a question to the **server,** the question is then delivered as an algorithm to the node. When the algorithm completes, the results are sent back to the client via the server. An algorithm can communicate directly with other algorithms that run on other nodes if required.
 
-![Vantage6 has a client server architecture. (A) The Client is used by the researcher to create computation requests. It is also used to manage users, organizations and collaborations. (B) The Server contains users, organizations, collaborations, tasks and their results. (C) The Node has access to data and handles computation requests from the server. ](<../.gitbook/assets/Artboard 1@4x (1).png>)
+![Vantage6 has a client server architecture. (A) The Client is used by the researcher to create computation requests. It is also used to manage users, organizations and collaborations. (B) The Server contains users, organizations, collaborations, tasks and their results. (C) The Node has access to data and handles computation requests from the server. ](<../.gitbook/assets/Artboard 1@4x (6).png>)
 
 The server is in charge of processing the tasks as well as of handling administrative functions such as authentication and authorization. Conceptually, vantage6 consists of the following parts:
 
