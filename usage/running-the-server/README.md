@@ -13,7 +13,7 @@ It is assumed that you successfully installed [vantage6-server](../../installati
 To create a new server, run the command below. A menu will be started that allows you to set up a server configuration file. For more details, check out the [server-configuration.md](server-configuration.md "mention") page.
 
 ```
-vnode new
+vstart new
 ```
 
 To run a server, execute the command below. The `--attach` flag will cause log output to be printed to the console.
@@ -21,6 +21,15 @@ To run a server, execute the command below. The `--attach` flag will cause log o
 ```
 vserver start --name <your_server> --attach
 ```
+
+{% hint style="warning" %}
+When the server is run for the first time an user is created:
+
+* username: root
+* password: root
+
+It is recommended to change this password immediately.&#x20;
+{% endhint %}
 
 Finally, a server can be stopped again with:
 
