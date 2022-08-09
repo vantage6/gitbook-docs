@@ -13,7 +13,7 @@ It is assumed that you successfully installed [vantage6-server](../../installati
 To create a new server, run the command below. A menu will be started that allows you to set up a server configuration file. For more details, check out the [server-configuration.md](server-configuration.md "mention") page.
 
 ```
-vstart new
+vserver new
 ```
 
 To run a server, execute the command below. The `--attach` flag will cause log output to be printed to the console.
