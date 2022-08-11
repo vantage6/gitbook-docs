@@ -70,29 +70,29 @@ collaborations:
   - name: ZEPPELIN
     participants:
       - name: IKNL
-        api_key: 123e4567-e89b-12d3-a456-426614174000
+        api_key: 123e4567-e89b-12d3-a456-426614174001
       - name: Small Organization
-        api_key: 123e4567-e89b-12d3-a456-426614174000
+        api_key: 123e4567-e89b-12d3-a456-426614174002
       - name: Big Organization
-        api_key: 123e4567-e89b-12d3-a456-426614174000
+        api_key: 123e4567-e89b-12d3-a456-426614174003
     tasks: ["hello-world"]
     encrypted: false
 
   - name: PIPELINE
     participants:
       - name: IKNL
-        api_key: 123e4567-e89b-12d3-a456-426614174000
+        api_key: 123e4567-e89b-12d3-a456-426614174004
       - name: Big Organization
-        api_key: 123e4567-e89b-12d3-a456-426614174000
+        api_key: 123e4567-e89b-12d3-a456-426614174005
     tasks: ["hello-world"]
     encrypted: false
 
   - name: SLIPPERS
     participants:
       - name: Small Organization
-        api_key: 123e4567-e89b-12d3-a456-426614174000
+        api_key: 123e4567-e89b-12d3-a456-426614174006
       - name: Big Organization
-        api_key: 123e4567-e89b-12d3-a456-426614174000
+        api_key: 123e4567-e89b-12d3-a456-426614174007
     tasks: ["hello-world", "hello-world"]
     encrypted: false
 ```
