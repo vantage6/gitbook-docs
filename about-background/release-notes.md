@@ -1,5 +1,30 @@
 # Release notes
 
+## 3.3.0
+
+* **Feature**
+  * Login requirements have been updated. Passwords are now required to have sufficient complexity (8+ characters, and at least 1 uppercase, 1 lowercase, 1 digit, 1 special character). Also, after 5 failed login attempts, a user account is blocked for 15 minutes (these defaults can be changed in a server config file).
+  * Added endpoint `/password/change` to allow users to change their password using their current password as authentication. It is no longer possible to change passwords via `client.user.update()` or via a PATCH `/user/{id}` request.
+  * Added the default roles 'viewer', 'researcher', 'organization admin' and 'collaboration admin' to newly created servers. These roles may be assigned to users of any organization, and should help users with proper permission assignment.
+  * Added option to filter get all roles for a specific user id in the GET `/role` endpoint.
+  * RabbitMQ has support for multiple servers when using `vserver start`. It already had support for multiple servers when deploying via a Docker compose file.
+  * When exiting server logs or node logs with Ctrl+C, there is now an additional message alerting the user that the server/node is still running in the background and how they may stop them.
+* **Change**
+  * Node proxy server has been updated
+  * Updated PyJWT and related dependencies for improved JWT security.
+  * When nodes are trying to use a wrong API key to authenticate, they now receive a clear message in the node logs and the node exits immediately.
+  * When using `vserver import`, API keys must now be provided for the nodes you create.
+  * Moved all swagger API docs from YAML files into the code. Also, corrected errors in them.
+  * API keys are created with UUID4 instead of UUID1. This prevents that UUIDs created milliseconds apart are not too similar.
+  * Rules for users to edit tasks were never used and have therefore been deleted.
+* **Bugfix**
+  * In the Python client, `client.organization.list()` now shows pagination metadata by default, which is consistent all other `list()` statements.
+  * When not providing an API key in `vnode new`, there used to be an unclear error message. Now, we allow specifying an API key later and provide a clearer error message for any other keys with inadequate values.
+  * It is now possible to provide a name when creating a name, both via the Python client as via the server.
+  * A GET `/role` request crashed if parameter `organization_id` was defined but not `include_root`. This has been resolved.
+  * Users received an 'unexpected error' when performing a GET `/collaboration?organization_id=<id>` request and they didn't have global collaboration view permission. This was fixed.
+  * GET `/role/<id>` didn't give an error if a role didn't exist. Now it does.
+
 ## 3.2.0
 
 * **Feature**
