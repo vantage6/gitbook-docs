@@ -38,7 +38,7 @@ vantage6 is designed with three fundamental functional aspects of Federated lear
 **Documentation**
 
 * [docs.vantage6.ai](https://docs.vantage6.ai) _-> this documentation_
-* [dev-docs.vantage6.ai](https://dev-docs.vantage6.ai) _-> unfinished technical documentation_
+* [dev-docs.vantage6.ai](https://tech-docs.vantage6.ai) _-> unfinished technical documentation_
 * [vantage6.ai](https://vantage6.ai) _-> general vantage6 website_&#x20;
 * [academic paper](https://vantage6.ai/documents/7/moncada-torres2020vantage6\_57GU4Gt.pdf) _-> technical insights into vantage6_
 
