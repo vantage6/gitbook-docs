@@ -3,11 +3,11 @@
 ## 3.3.1
 
 * **Bugfix**
-  * Fixed faulty error status codes from the `/collaboration` endpoint
-  * _Default_ roles are always returned from the `/role` endpoint. This fixes the error when a user was assigned a _default_ role but could not reach anything (as it could not view its own role).
-  * Performance upgrade in the `/organization` endpoint. This caused long delays when retrieving organization information when the organization has many tasks.
-  * Organization admins are no longer allowed to create and delete nodes as these should be managed at collaboration level. Therefore, the collaboration admin rules have been extended to include create and delete nodes rules.
-  * Fixed some issues that made `3.3.0` incompatible with `3.3.1`.
+  * Fixed faulty error status codes from the `/collaboration` endpoint ([PR#287](https://github.com/vantage6/vantage6/pull/287)).
+  * _Default_ roles are always returned from the `/role` endpoint. This fixes the error when a user was assigned a _default_ role but could not reach anything (as it could not view its own role) ([PR#286](https://github.com/vantage6/vantage6/pull/286)).
+  * Performance upgrade in the `/organization` endpoint. This caused long delays when retrieving organization information when the organization has many tasks ([PR#288](https://github.com/vantage6/vantage6/pull/288)).
+  * Organization admins are no longer allowed to create and delete nodes as these should be managed at collaboration level. Therefore, the collaboration admin rules have been extended to include create and delete nodes rules ([PR#289](https://github.com/vantage6/vantage6/pull/289)).
+  * Fixed some issues that made `3.3.0` incompatible with `3.3.1` ([Issue#285](https://github.com/vantage6/vantage6/issues/285)).
 
 ## 3.3.0
 
