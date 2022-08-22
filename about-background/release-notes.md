@@ -1,5 +1,14 @@
 # Release notes
 
+## 3.3.1
+
+* **Bugfix**
+  * Fixed faulty error status codes from the `/collaboration` endpoint
+  * _Default_ roles are always returned from the `/role` endpoint. This fixes the error when a user was assigned a _default_ role but could not reach anything (as it could not view its own role).
+  * Performance upgrade in the `/organization` endpoint. This caused long delays when retrieving organization information when the organization has many tasks.
+  * Organization admins are no longer allowed to create and delete nodes as these should be managed at collaboration level. Therefore, the collaboration admin rules have been extended to include create and delete nodes rules.
+  * Fixed some issues that made `3.3.0` incompatible with `3.3.1`.
+
 ## 3.3.0
 
 * **Feature**
