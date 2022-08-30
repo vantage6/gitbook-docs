@@ -59,6 +59,14 @@ application:
     # the value 'Alice' inside the algorithm container
     player: Alice
   
+  # specify custom Docker images to use for starting the different 
+  # components.
+  images:
+    node: harbor2.vantage6.ai/infrastructure/node:petronas
+    alpine: harbor2.vantage6.ai/infrastructure/alpine
+    vpn_client: harbor2.vantage6.ai/infrastructure/vpn_client
+    network_config: harbor2.vantage6.ai/infrastructure/vpn_network
+  
   # path or endpoint to the local data source. The client can request a
   # certain database to be used if it is specified here. They are 
   # specified as label:local_path pairs.
