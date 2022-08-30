@@ -1,5 +1,12 @@
 # Release notes
 
+## 3.3.2
+
+* **Bugfix**
+  * `vpn_client_image` and `network_config_image` are settable through the node configuration file. ([PR#301](https://github.com/vantage6/vantage6/pull/301), [Issue#294](https://github.com/vantage6/vantage6/issues/294))
+  * The option `--all` from `vnode stop` did not stop the node gracefully. This has been fixed. It is possible to force the nodes to quit by using the `--force` flag. ([PR#300](https://github.com/vantage6/vantage6/pull/300), [Issue#298](https://github.com/vantage6/vantage6/issues/298))
+  * Nodes using a slow internet connection (high ping) had issues with connecting to the websocket channel. ([PR#299](https://github.com/vantage6/vantage6/pull/299), [Issue#297](https://github.com/vantage6/vantage6/issues/297))
+
 ## 3.3.1
 
 * **Bugfix**
