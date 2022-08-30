@@ -61,6 +61,7 @@ application:
   
   # specify custom Docker images to use for starting the different 
   # components.
+  # OPTIONAL
   images:
     node: harbor2.vantage6.ai/infrastructure/node:petronas
     alpine: harbor2.vantage6.ai/infrastructure/alpine
