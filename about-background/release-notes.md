@@ -1,5 +1,11 @@
 # Release notes
 
+## 3.3.3
+
+* **Bugfix**
+  * Token refresh was broken for both users and nodes. ([Issue#306](https://github.com/vantage6/vantage6/issues/306), [PR#307](https://github.com/vantage6/vantage6/pull/307))
+  * Local proxy encrpytion was broken. This prefented algorithms from creating sub tasks when encryption was enabled. ([Issue#305](https://github.com/vantage6/vantage6/issues/305), [PR#308](https://github.com/vantage6/vantage6/pull/308))
+
 ## 3.3.2
 
 * **Bugfix**
