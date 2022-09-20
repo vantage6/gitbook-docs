@@ -14,6 +14,12 @@ Join our [Discord channel](https://discord.gg/tR7tqCt), and get in touch with th
 
 ### Fixing issues or adding features
 
+{% hint style="danger" %}
+**Found a security issue?**
+
+Please see our [SECURITY](https://github.com/vantage6/vantage6) policy
+{% endhint %}
+
 Whenever you found an issue and wrote a fix or when you just want to help improving the code, where happy that you want to contribute to the code base. The process to submit a fix would be as follows:
 
 1. Create an [issue ](https://github.com/vantage6/vantage6/issues)on the Github page.
@@ -37,5 +43,5 @@ Then it is out of your hands for now. A reviewer will look at the issue and code
 
 ## :police\_officer: If you're into security, privacy&#x20;
 
-One of the top priorities of vantage6 is being secure in what it does. Therefore having people reporting possible security issues to us is immensely helpful. If you have security concerns please report them directly to [f.martin@iknl.nl](mailto:f.martin@iknl.nl) or [b.vanbeusekom@iknl.nl](mailto:b.vanbeusekom@iknl.nl).
+One of the top priorities of vantage6 is being secure in what it does. Therefore having people reporting possible security issues to us is immensely helpful. If you have security concerns please report them directly to [vantage6@iknl.nl](mailto:vantage6@iknl.nl).
 
