@@ -1,5 +1,14 @@
 # Release notes
 
+## 3.3.5
+
+* **Feature**
+  * The release pipeline has been expanded to automatically push new Docker images of node/server to the harbor2 service.
+* **Bugfix**
+  * The VPN IP address for a node was not saved by the server using the PATCH `/node` endpoint, while this functionality is required to use the VPN
+
+Note that 3.3.4 was only released on PyPi and that version is identical to 3.3.5. That version was otherwise skipped due to a temporary mistake in the release pipeline.
+
 ## 3.3.3
 
 * **Bugfix**

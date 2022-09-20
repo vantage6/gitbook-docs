@@ -17,7 +17,7 @@ Join our [Discord channel](https://discord.gg/tR7tqCt), and get in touch with th
 {% hint style="danger" %}
 **Found a security issue?**
 
-Please see our [SECURITY](https://github.com/vantage6/vantage6/SECURITY.md) policy
+Please see our [SECURITY](https://github.com/vantage6/vantage6/SECURITY.md) policy.
 {% endhint %}
 
 Whenever you found an issue and wrote a fix or when you just want to help improving the code, where happy that you want to contribute to the code base. The process to submit a fix would be as follows:
