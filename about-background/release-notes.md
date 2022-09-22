@@ -1,5 +1,10 @@
 # Release notes
 
+## 3.3.6
+
+* **Bugfix**
+  * Temporary fix for a bug that prevents the master container from creating tasks in an encrypted collaboration. This disabled the parallel encryption module in the local proxy. This functionallity will be restored in a future release.
+
 ## 3.3.5
 
 * **Feature**
