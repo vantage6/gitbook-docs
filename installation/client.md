@@ -31,5 +31,5 @@ The R client currently only supports creating tasks and retrieving their results
 You can install the R client by running:
 
 ```r
-devtools::install_github('IKNL/vtg.basic', subdir='src')
+devtools::install_github('IKNL/vtg', subdir='src')
 ```
