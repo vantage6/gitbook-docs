@@ -1,6 +1,6 @@
 # R Client
 
-It is assumed you installed the [vantage6-client](../../installation/client.md). The R client can create tasks and retrieve their results. If you want to do more administrative tasks, either use the API directly or use the [python-client.md](python-client.md "mention").
+It is assumed you installed the [vantage6-client](../../installation/client.md). The R client can create tasks and retrieve their results. If you want to do more administrative tasks, either use the API directly or use the [python-client](python-client/ "mention").
 
 Initialization of the R client can be done by:
 

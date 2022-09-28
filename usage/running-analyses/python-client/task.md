@@ -20,7 +20,7 @@ In this manual, we'll use the averaging algorithm from `harbor2.vantage6.ai/demo
       my_other_database: /path/to/my/example2.csv
 ```
 
-so that the third requirement is also met. As an end-user running the algorithm, you'll need to align with the node owner about which database name is used for the database you are interested in. For more info on configuring the nodes, see [configuring the node](../running-the-node/configuration.md).
+so that the third requirement is also met. As an end-user running the algorithm, you'll need to align with the node owner about which database name is used for the database you are interested in. For more info on configuring the nodes, see [configuring the node](../../running-the-node/configuration.md).
 
 ## Determining which collaboration / organizations to create a task for
 

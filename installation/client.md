@@ -1,8 +1,10 @@
 # Client
 
-The client communicates with the central server. The server hosts an API which can be used for this purpose. To see the API documentation you can use the `/apidocs` page (e.g. [https://petronas.vantage6.ai/apidocs](https://petronas.vantage6.ai/apidocs)).&#x20;
+We provide four ways in which you can interact with the server to manage your vantage6 resources: the user interface (UI), the Python client, the R client, and the server API.&#x20;
 
-We have written two client libraries: one for R and one for Python. The R client currently only supports creating tasks and retrieving their results.&#x20;
+What you need to install depends on which interface you choose. In order to use the UI or the server API, you usually don't need to install anything: the UI is a website, and the API can be called via HTTP requests from a programming language of your choice. For the UI, you only need to set it up in case you are setting up your own server (see [user-interface.md](server/user-interface.md "mention") for instructions).&#x20;
+
+Installation instructions for the Python client and R client are below. For most use cases, we recommend to use the UI (for anything except creating tasks) and/or the Python Client (which covers server API functionality completely).
 
 #### Python client library
 
@@ -20,7 +22,11 @@ Then you can install the `vantage6-client` with:
 pip install vantage6==VERSION
 ```
 
+where you add the version you want to install. You may also leave out the version to install the most recent version.
+
 **R client library**
+
+The R client currently only supports creating tasks and retrieving their results. It can not (yet) be used to manage resources, such as creating and deleting users and organizations.
 
 You can install the R client by running:
 

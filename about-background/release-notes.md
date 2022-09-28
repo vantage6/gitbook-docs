@@ -3,7 +3,11 @@
 ## 3.3.6
 
 * **Bugfix**
-  * Temporary fix for a bug that prevents the master container from creating tasks in an encrypted collaboration. This temporary fix disables the parallel encryption module in the local proxy. This functionallity will be restored in a future release.
+  * Temporary fix for a bug that prevents the master container from creating tasks in an encrypted collaboration. This temporary fix disables the parallel encryption module in the local proxy. This functionality will be restored in a future release.
+
+{% hint style="info" %}
+This version is also the first version where the User Interface is available in the right version. From this point onwards, the user interface changes will also be part of the release notes.
+{% endhint %}
 
 ## 3.3.5
 

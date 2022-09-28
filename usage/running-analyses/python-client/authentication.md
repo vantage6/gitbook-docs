@@ -4,7 +4,7 @@ description: How to authenticate a client with the vantage6 server
 
 # Authentication
 
-This page and the following pages introduce some minimal examples for administrative tasks that you can perform with our [Python client](python-client.md). We start by authenticating.
+This page and the following pages introduce some minimal examples for administrative tasks that you can perform with our [Python client](./). We start by authenticating.
 
 To authenticate, we create a config file to store our login information. We do this so we do not have to define the `server_url`, `server_port` and so on every time we want to use the client. Moreover, it enables us to separate the sensitive information (login details, organization key) that you do not want to make publicly available, from other parts of the code you might write later (e.g. on submitting particular tasks) that you might want to share publicly.
 

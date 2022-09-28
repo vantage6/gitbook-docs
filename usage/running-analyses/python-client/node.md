@@ -8,7 +8,7 @@ description: >-
 
 Here, we assume that you have a Python session with an authenticated Client object, as created in [Authentication](authentication.md). We also assume that you have a login on the Vantage6 server that has the permissions to create a new node (regular end-users typically do not have these permissions, this is typically only for administrators).
 
-A node is associated with both a collaboration and an organization (see [Concepts](../preliminaries.md#concepts)). You will need to find the collaboration and organization id's for the node you want to register:
+A node is associated with both a collaboration and an organization (see [Concepts](../../preliminaries.md#concepts)). You will need to find the collaboration and organization id's for the node you want to register:
 
 ```python
 client.organization.list(fields=['id', 'name'])
@@ -25,4 +25,4 @@ api_key = client.node.create(collaboration = collaboration_id, organization = or
 print(f"Registered a node for collaboration with id {collaboration_id}, organization with id {organization_id}. The API key that was generated for this node was {api_key}")
 ```
 
-Remember to save the `api_key` that is returned here, since you will need it when [configuring the node](../running-the-node/configuration.md).
+Remember to save the `api_key` that is returned here, since you will need it when [configuring the node](../../running-the-node/configuration.md).

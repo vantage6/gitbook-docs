@@ -10,9 +10,13 @@ To install the **vantage6-server** make sure you have met the [requirements](../
 pip install vantage6
 ```
 
+This command will install the vantage6 command line interface (CLI), from which you can create new servers (see Use [running-the-server](../../usage/running-the-server/ "mention")).
+
 #### Optional components
 
 There are several optional components that you can set up apart from the vantage6-server itself.
+
+You can set up a [user-interface.md](user-interface.md "mention"), which is a web application that will allow your users to communicate more easily with your vantage6 server.
 
 A docker registry can be used to store algorithms but it is also possible to use [Docker hub](https://hub.docker.com/) for this. For instructions on how to install your own Docker registry see [docker-registry.md](docker-registry.md "mention").&#x20;
 
