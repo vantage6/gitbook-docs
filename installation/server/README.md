@@ -23,8 +23,3 @@ A docker registry can be used to store algorithms but it is also possible to use
 If you want to enable algorithm containers that are running on different nodes, to directly communicate with one another, you require a VPN server. Refer to [eduvpn.md](eduvpn.md "mention") on how to install the VPN server.
 
 If you have a server with a high workload whose performance you want to improve, you may want to set up a RabbitMQ service which enables horizontal scaling of the Vantage6 server. See[rabbitmq.md](rabbitmq.md "mention")[ ](rabbitmq.md)on how to set this up.
-
-{% hint style="info" %}
-Currently it is not possible to communicate to nodes via their public IPs
-{% endhint %}
-
