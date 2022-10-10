@@ -1,5 +1,10 @@
 # Release notes
 
+## 3.3.7
+
+* **Bugfix**
+  * The function `client.util.change_my_password()` was updated ([Issue #333](https://github.com/vantage6/vantage6/issues/333))
+
 ## 3.3.6
 
 * **Bugfix**
