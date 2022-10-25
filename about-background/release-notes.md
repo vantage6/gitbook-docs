@@ -10,7 +10,7 @@ _25 oktober 2022_
   * When the node starts, or when the client is verbose initialized a banner to cite the vantage6 project is added ([PR#359](https://github.com/vantage6/vantage6/pull/359), [ISSUE#356](https://github.com/vantage6/vantage6/issues/356)).
   * In the client a waiting for results method is added ([PR#325](https://github.com/vantage6/vantage6/pull/325), [ISSUE#8](https://github.com/vantage6/vantage6/issues/8)). Which allows you to automatically poll for results by using `client.wait_for_results(...)`, for more info see `help(client.wait_for_results)`.
   * Added Github releases ([PR#358](https://github.com/vantage6/vantage6/pull/358), [ISSUE#357](https://github.com/vantage6/vantage6/issues/357)).
-  * Added option to filter GET `/role` by user id ([PR#328](https://github.com/vantage6/vantage6/pull/328), [ISSUE#213](https://github.com/vantage6/vantage6/issues/213)).
+  * Added option to filter GET `/role` by user id ([PR#328](https://github.com/vantage6/vantage6/pull/328), [ISSUE#213](https://github.com/vantage6/vantage6/issues/213)). E.g.: `client.role.list(user=...).`
 * **Change**
   * Unused code removed from the Makefile ([PR#324](https://github.com/vantage6/vantage6/issues/357), [ISSUE#284](https://github.com/vantage6/vantage6/issues/284)).
   * Panda version is frozen to version 1.3.5 ([PR#363](https://github.com/vantage6/vantage6/pull/363) , [ISSUE#266](https://github.com/vantage6/vantage6/issues/266)).
