@@ -15,7 +15,7 @@ _25 oktober 2022_
   * Unused code removed from the Makefile ([PR#324](https://github.com/vantage6/vantage6/issues/357), [ISSUE#284](https://github.com/vantage6/vantage6/issues/284)).
   * Panda version is frozen to version 1.3.5 ([PR#363](https://github.com/vantage6/vantage6/pull/363) , [ISSUE#266](https://github.com/vantage6/vantage6/issues/266)).
 * **Bugfix**
-  * Improve checks for non-existing resources in unittests ([PR#320](https://github.com/vantage6/vantage6/pull/320), [ISSUE#265](https://github.com/vantage6/vantage6/issues/265)). Flask did not support negative ints, so the tests passed of another 404 response.
+  * Improve checks for non-existing resources in unittests ([PR#320](https://github.com/vantage6/vantage6/pull/320), [ISSUE#265](https://github.com/vantage6/vantage6/issues/265)). Flask did not support negative ints, so the tests passed due to another 404 response.
   * `client.node.list` does no longer filter by offline nodes ([PR#321](https://github.com/vantage6/vantage6/pull/321), [ISSUE#279](https://github.com/vantage6/vantage6/issues/279)).
 
 {% hint style="info" %}
