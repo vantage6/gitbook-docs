@@ -107,6 +107,9 @@ environments:
       server: smtp.yourmailserver.com
       username: your-username
       password: super-secret-password
+      
+    # Set an email address you want to direct your users to for support
+    support_email: your-support@email.com
     
     # If algorithm containers need direct communication between each other
     # the server also requires a VPN server. (!) This must be a EduVPN
