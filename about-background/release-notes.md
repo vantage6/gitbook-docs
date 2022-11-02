@@ -157,6 +157,13 @@ Note that 3.3.4 was only released on PyPi and that version is identical to 3.3.5
   * Fix node status when node is stopped and immediately started up
   * Check if node names are allowed docker names
 
+## 2.3.5
+
+_31 Oktober 2022_
+
+* **Bugfix**
+  * Encryption module in the local proxy server has been fixed
+
 ## 2.3.0 - 2.3.4
 
 * **Feature**&#x20;
