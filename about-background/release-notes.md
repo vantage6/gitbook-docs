@@ -1,6 +1,14 @@
 # Release notes
 
-## 3.4.0
+## 3.4.2
+
+_3 november 2022_
+
+* **Bugfix**
+  * Fixed a bug in the local proxy server which made algorithm containers crash in case the  \`client.create\_new\_task\` method was used ([PR#382](https://github.com/vantage6/vantage6/pull/382)). &#x20;
+  * Fixed a bug that crashed the node when a non existing image was send in a task ([PR#375](https://github.com/vantage6/vantage6/pull/375)).
+
+## 3.4.0 & 3.4.1
 
 _25 oktober 2022_
 
@@ -20,6 +28,10 @@ _25 oktober 2022_
 
 {% hint style="info" %}
 This version is also the first version to be released with container images for both ARM and x86 architecture.
+{% endhint %}
+
+{% hint style="info" %}
+3.4.1 is a rebuild from 3.4.0 in which the all dependencies are fixed, as the build led to a broken server image.
 {% endhint %}
 
 ## 3.3.7
