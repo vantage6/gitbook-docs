@@ -107,7 +107,9 @@ environments:
       server: smtp.yourmailserver.com
       username: your-username
       password: super-secret-password
-      
+      # set how long reset token provided via email are valid (default 1 hour)
+      email_token_validity_minutes: 60
+          
     # Set an email address you want to direct your users to for support
     support_email: your-support@email.com
     
