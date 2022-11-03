@@ -5,7 +5,7 @@
 _3 november 2022_
 
 * **Bugfix**
-  * Fixed a bug in the local proxy server which made algorithm containers crash in case the  \`client.create\_new\_task\` method was used ([PR#382](https://github.com/vantage6/vantage6/pull/382)). &#x20;
+  * Fixed a bug in the local proxy server which made algorithm containers crash in case the  `client.create_new_task` method was used ([PR#382](https://github.com/vantage6/vantage6/pull/382)). &#x20;
   * Fixed a bug that crashed the node when a non existing image was send in a task ([PR#375](https://github.com/vantage6/vantage6/pull/375)).
 
 ## 3.4.0 & 3.4.1
