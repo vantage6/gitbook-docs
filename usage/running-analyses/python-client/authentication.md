@@ -11,7 +11,8 @@ To authenticate, we create a config file to store our login information. We do t
 ```python
 # config.py
 
-server_url = "https://MY VANTAGE6 SERVER"
+server_url = "https://MY VANTAGE6 SERVER" # e.g. https://petronas.vantage6.ai or 
+                                          # http://localhost for a local dev server
 server_port = 443 # This is specified when you first created the server
 server_api = "" # This is specified when you first created the server
 
