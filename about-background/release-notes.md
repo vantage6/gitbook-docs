@@ -1,5 +1,22 @@
 # Release notes
 
+## 3.5.0
+
+_30 november 2022_
+
+{% hint style="danger" %}
+When upgrading you might need to add the **otp\_secret** to the **user** table manually
+{% endhint %}
+
+* **Feature**
+  * TOTP Multi-Factor-Authenticator has been added. Admins can enforce that all users enable MFA ([PR#376](https://github.com/vantage6/vantage6/pull/376), [Issue#355](https://github.com/vantage6/vantage6/issues/355)).
+  * The server support email is not settable, used to be fixed at `support@vantage6.ai` ([PR#330](https://github.com/vantage6/vantage6/pull/330), [Issue#319](https://github.com/vantage6/vantage6/issues/319)).&#x20;
+  * You can now request all tasks assigned by a given user ([PR#326](https://github.com/vantage6/vantage6/pull/326), [Issue#43](https://github.com/vantage6/vantage6/issues/43)).
+  * When pickles are used the task info is shown in the node logs ([PR#366](https://github.com/vantage6/vantage6/pull/366), [Issue#171](https://github.com/vantage6/vantage6/issues/171)).
+* **Change**
+  * The `harbor2.vantag6.ai/infrastructure/algorithm-base:[TAG]` is tagged with the vantage6-client version that is already in the image ([PR#389](https://github.com/vantage6/vantage6/pull/389), [Issue#233](https://github.com/vantage6/vantage6/issues/233)).
+  * The infrastructure base image has been updated to improve build time ([PR#406](https://github.com/vantage6/vantage6/pull/406), [Issue#250](https://github.com/vantage6/vantage6/issues/250)).
+
 ## 3.4.2
 
 _3 november 2022_
