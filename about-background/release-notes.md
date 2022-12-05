@@ -1,11 +1,29 @@
 # Release notes
 
+## 3.5.2
+
+_30 november 2022_
+
+**Bugfix**
+
+* Fix for automatic addition of column. This failed in some SQL dialects because reserved keywords (i.e. 'user' for PostgresQL) where not escaped ([PR#415](https://github.com/vantage6/vantage6/pull/415))
+* Correct installation order for uWSGI in node and server docker file ([PR#414](https://github.com/vantage6/vantage6/pull/414))
+
+## 3.5.1
+
+_30 november 2022_
+
+**Bugfix**
+
+* Backwards compatibility for which organization initiated a task between v3.0-3.4 and v3.5 ([PR#412](https://github.com/vantage6/vantage6/pull/413))
+* Fixed VPN client container. Entry script was not executable in Github pipelines ([PR#413](https://github.com/vantage6/vantage6/pull/413))
+
 ## 3.5.0
 
 _30 november 2022_
 
 {% hint style="danger" %}
-When upgrading, you might need to add the **otp\_secret** column to the **user** table manually in the database. This is most likely the case when using PostgresQL for your database.
+When upgrading to 3.5.0, you might need to add the **otp\_secret** column to the **user** table manually in the database. This may be avoided by upgrading to 3.5.2.
 {% endhint %}
 
 * **Feature**
