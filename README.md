@@ -4,6 +4,12 @@ description: Good that you are here!
 
 # Welcome
 
+{% hint style="danger" %}
+<mark style="color:red;">**Check out our new documentation**</mark>\ <mark style="color:red;">****</mark>\ <mark style="color:red;">****</mark><mark style="color:red;">This documentation space is no longer maintained. Please find the latest documentation at</mark> [<mark style="color:red;">**https://docs.vantage6.ai**</mark>](https://docs.vantage6.ai)<mark style="color:red;">!</mark> &#x20;
+{% endhint %}
+
+<mark style="color:red;">****</mark>
+
 ## What is vantage6? :train2:
 
 {% embed url="https://youtu.be/HVHvlkAeuD0" %}
